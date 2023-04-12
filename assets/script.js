@@ -3,27 +3,31 @@ var quizTime=60
 var questionNumber=0
 
 var questions=[{
-  // chane question 1 and choices to q/a and then add if statements for right/wrong
-  question: 'question 1',
-  options: ['choice one','choice two',],
-  answer: 'choice one'
+
+  question: 'What is used to create a variable?',
+  options: ['variable','create','var','ver'],
+  answer: 'var'
 },{
-  question: 'question 2',
-  options: ['choice three','choice four'],
-  answer: 'choice three'
+  question: 'An array is a variable which can hold more than one ____?',
+  options: ['number','letter','assignment','value'],
+  answer: 'value'
 },{
-  question: 'question 3',
-  options: ['choice five','choice six'],
-  answer: 'choice three'
+  question: '______ are used to perform different actions based on different conditions',
+  options: ['arrays','conditional statements','strings','methods'],
+  answer: 'conditional statements'
 },{
-  question: 'question 4',
-  options: ['choice seven','choice eight'],
-  answer: 'choice three'
+  question: 'A string is written inside _____',
+  options: ['quotes','brackets','exclamation points','parenthesis'],
+  answer: 'quotes'
 },{
-  question: 'question 5',
-  options: ['choice nine','choice ten'],
-  answer: 'choice three'
+  question: 'What can be used to find out if an expression is true or false?',
+  options: ['random','string','boolean','value'],
+  answer: 'boolean'
 }]
+
+
+
+
 function startTimer(){
 
 
