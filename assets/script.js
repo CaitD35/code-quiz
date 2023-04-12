@@ -1,21 +1,33 @@
-let startButton=document.getElementById('startQuiz')
-let quizTime=60 
-let questionNumber=0
+var startButton=document.getElementById('startQuiz')
+var quizTime=60 
+var questionNumber=0
 
-let questions=[{
+var questions=[{
   // chane question 1 and choices to q/a and then add if statements for right/wrong
   question: 'question 1',
-  options: ['choice one','choice two'],
+  options: ['choice one','choice two',],
   answer: 'choice one'
 },{
   question: 'question 2',
   options: ['choice three','choice four'],
   answer: 'choice three'
+},{
+  question: 'question 3',
+  options: ['choice five','choice six'],
+  answer: 'choice three'
+},{
+  question: 'question 4',
+  options: ['choice seven','choice eight'],
+  answer: 'choice three'
+},{
+  question: 'question 5',
+  options: ['choice nine','choice ten'],
+  answer: 'choice three'
 }]
 function startTimer(){
 
 
-let timer=setInterval(function(){
+var timer=setInterval(function(){
 if(quizTime>0){
   quizTime=quizTime-1;
   document.getElementById('time').innerHTML=quizTime
@@ -26,17 +38,17 @@ if(quizTime>0){
 }
 
 function startQuiz(){
-  let currentQuestion=questions[questionNumber]
+  var currentQuestion=questions[questionNumber]
 
-  let quizDiv=document.createElement('div')
+  var quizDiv=document.createElement('div')
 
 
-  let questionDiv=document.createElement('div')
+  var questionDiv=document.createElement('div')
   questionDiv.innerHTML=currentQuestion.question;
   quizDiv.append(questionDiv)
 
   for (i=0;i<currentQuestion.options.length;i++){
-    let optionButton= document.createElement('button')
+    var optionButton= document.createElement('button')
     optionButton.innerHTML=currentQuestion.options[i]
     optionButton.addEventListener('click',function(event){
       event.preventDefault()

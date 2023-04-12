@@ -1,0 +1,13 @@
+#timer {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 10%;
+  padding: 30px;
+}
+
+h1{
+  display: flex;
+  justify-content: center;
+}
+
+
